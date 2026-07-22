@@ -1,19 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
     background-color: #11071F;
 }
 
 .nav-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
 }
 
-.nav-container img{
-    max-width: 57px;
-    max-height: 48px;
+.logo{
+    width: 90px;
+    min-height: 100%;
 }
 
-.nav-content{
-    color: white;
+.nav-content ul{
     display: flex;
     flex-direction: row;
+    list-style: none;
+    gap: 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+.nav-content a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+.links li{
+    list-style: none;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contato-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contato-content{
+    display: flex;
+    gap: 10px;
+}
+
