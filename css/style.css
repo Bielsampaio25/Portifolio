@@ -1,0 +1,19 @@
+body{
+    background-color: #11071F;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-container img{
+    max-width: 57px;
+    max-height: 48px;
+}
+
+.nav-content{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
