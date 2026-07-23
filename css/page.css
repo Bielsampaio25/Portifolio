@@ -125,3 +125,63 @@
     color: white;
     font-family: "Manrope", sans-serif;
 }
+
+.sobre-mim{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 400px;
+    margin-top: 20px;
+    background:
+        radial-gradient(
+            circle 700px at top left,
+            rgba(105,59,147,.30) 0%,
+            rgba(110,191,244,.18) 60%,
+            rgba(70,144,212,.08) 100%
+        ),
+        #1A0B2E;
+        color: white;
+}
+
+.sobre-mim-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sobre-mim-texto h4{
+    font-family: "Manrope", sans-serif;
+    color: #8D51C4;
+}
+
+.sobre-mim-texto h1{
+    font-family: "Sora", sans-serif;
+}
+
+.sobre-mim-texto p{
+    font-family: "Manrope", sans-serif;
+}
+
+.sobre-mim-cards-container{
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    background:
+        radial-gradient(
+            circle 700px at top left,
+            rgba(105,59,147,.30) 10%,
+            rgba(110,191,244,.18) 50%,
+            rgba(70,144,212,.08) 100%
+        ),
+        #1A0B2E;
+        color: white;
+}
+
+.sobre-mim-card-cima,
+.sobre-mim-card-baixo{
+    display: flex;
+}
+
+.sobre-mim-card-content{
+    display: flex;
+}
