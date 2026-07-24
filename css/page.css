@@ -251,14 +251,14 @@
     color: #C9C9D5;
 }
 
-.tecnologias-container {
+#tecnologias-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-top: 80px;
 }
 
-.tecnologias-container>h4 {
+#tecnologias-container>h4 {
     font-family: "Manrope", sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -314,12 +314,12 @@
     margin: 0;
 }
 
-.qualificacoes-container {
+#qualificacoes-container {
     display: flex;
     flex-direction: column;
 }
 
-.qualificacoes-container>h4 {
+#qualificacoes-container>h4 {
     font-family: "Manrope", sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -426,15 +426,172 @@
     font-style: normal;
 }
 
-.card-qualificacao-texto p{
+.card-qualificacao-texto p {
     font-family: "Poppins", sans-serif;
     font-weight: 25;
     font-style: normal;
 }
 
-.card-qualificacao-texto h4{
-     font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #8D51C4;
+.card-qualificacao-texto h4 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8D51C4;
+}
+
+#projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 90px;
+}
+
+#projetos-container>h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    color: #8D51C4;
+}
+
+.projetos-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.projetos-card {
+    width: 500px;
+    background:
+        radial-gradient(circle at top left,
+            rgba(105, 59, 147, .35),
+            rgba(23, 18, 40, 1));
+
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .35s;
+}
+
+.projetos-card:hover {
+    transform: translateY(-8px);
+    border-color: #8D51C4;
+    box-shadow: 0 18px 40px rgba(141, 81, 196, .25);
+
+}
+
+.projetos-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.projetos-card-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.projetos-card-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.projetos-tipo {
+    margin: 0;
+    color: #8D51C4;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.projetos-card-texto h2 {
+    margin: 0;
+    font-family: "Sora", sans-serif;
+    color: white;
+    font-size: 28px;
+}
+
+.projetos-card-texto p {
+    margin: 0;
+    color: #D2D2DD;
+    font-family: "Manrope", sans-serif;
+    line-height: 1.8;
+}
+
+.tecnologias-utilizadas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tecnologias-utilizadas-content {
+    padding: 8px 15px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    background: #11071F;
+}
+
+.tecnologias-utilizadas-content h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.projetos-card-content hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, .08);
+}
+
+.projeto-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projeto-card-footer button {
+    padding: 12px 26px;
+    border: none;
+    border-radius: 8px;
+    background: #8D51C4;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.projeto-card-footer button:hover {
+    background: #A46DD5;
+    transform: translateY(-2px);
+}
+
+.projeto-card-footer-git a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    transition: .3s;
+}
+
+.projeto-card-footer-git img {
+    width: 22px;
+    height: 22px;
+}
+
+.projeto-card-footer-git a:hover {
+    color: #A46DD5;
 }
