@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
 
-.inicio-container{
+.inicio-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.perfil-container{
+.perfil-container {
     position: relative;
 }
 
-.perfil-container::before{
+.perfil-container::before {
     content: "";
     position: absolute;
 
@@ -23,37 +23,36 @@
 
     transform: translate(-50%, -50%);
 
-    background: radial-gradient(
-        circle,
-        rgba(118,60,172,.7) 0%,
-        rgba(118,60,172,.3) 35%,
-        transparent 70%
-    );
+    background: radial-gradient(circle,
+            rgba(118, 60, 172, .7) 0%,
+            rgba(118, 60, 172, .3) 35%,
+            transparent 70%);
 
     filter: blur(60px);
 
     z-index: -1;
 }
 
-.perfil{
+.perfil {
     width: 250px;
     border-radius: 50%;
     position: relative;
     z-index: 1;
 }
 
-.inicio-textos{
+.inicio-textos {
     color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.texto{
+.texto {
     font-family: "Manrope", sans-serif;
     font-weight: 27;
 }
-#titulo-apresentacao{
+
+#titulo-apresentacao {
     background: linear-gradient(to right, #9934F5 0%, #CD9EF8 100%);
     font-family: "Manrope", sans-serif;
     background-clip: text;
@@ -63,21 +62,21 @@
     -webkit-text-fill-color: transparent;
 }
 
-.titulo-principal{
+.titulo-principal {
     font-family: "Sora", sans-serif;
 }
 
-.titulo-principal-trecho{
+.titulo-principal-trecho {
     color: #763CAC;
 }
 
-.inicio-botoes{
+.inicio-botoes {
     display: flex;
     margin-top: 30px;
     gap: 20px;
 }
 
-.botao-projeto{
+.botao-projeto {
     width: 140px;
     min-height: 100%;
     display: flex;
@@ -87,12 +86,12 @@
     border-radius: 5px;
 }
 
-.botao-projeto img{
+.botao-projeto img {
     width: 25px;
     min-height: 100%;
 }
 
-.botao-projeto a{
+.botao-projeto a {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -101,7 +100,7 @@
     font-family: "Manrope", sans-serif;
 }
 
-.botao-contato{
+.botao-contato {
     width: 180px;
     min-height: 100%;
     display: flex;
@@ -112,12 +111,12 @@
     border-radius: 5px;
 }
 
-.botao-contato img{
+.botao-contato img {
     width: 25px;
     min-height: 100%;
 }
 
-.botao-contato a{
+.botao-contato a {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -126,62 +125,128 @@
     font-family: "Manrope", sans-serif;
 }
 
-.sobre-mim{
+.sobre-mim {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 50px;
     width: 100%;
-    min-height: 400px;
-    margin-top: 20px;
+    min-height: 700px;
+
+    padding: 100px 8%;
+
     background:
-        radial-gradient(
-            circle 700px at top left,
-            rgba(105,59,147,.30) 0%,
-            rgba(110,191,244,.18) 60%,
-            rgba(70,144,212,.08) 100%
-        ),
+        radial-gradient(circle 700px at top left,
+            rgba(105, 59, 147, .30) 0%,
+            rgba(110, 191, 244, .18) 60%,
+            rgba(70, 144, 212, .08) 100%),
         #1A0B2E;
-        color: white;
+
+    color: white;
 }
 
-.sobre-mim-texto{
+.sobre-mim-texto {
+    flex: 1;
+    max-width: 620px;
+
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 24px;
 }
 
-.sobre-mim-texto h4{
+.sobre-mim-texto h4 {
     font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
     color: #8D51C4;
 }
 
-.sobre-mim-texto h1{
+.sobre-mim-texto h1 {
     font-family: "Sora", sans-serif;
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 700;
 }
 
-.sobre-mim-texto p{
+.sobre-mim-texto p {
     font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #D3D3E0;
 }
 
-.sobre-mim-cards-container{
+.sobre-mim-cards-container {
+    flex: 0 0 470px;
+
     display: flex;
-    height: 250px;
     flex-direction: column;
-    background:
-        radial-gradient(
-            circle 700px at top left,
-            rgba(105,59,147,.30) 10%,
-            rgba(110,191,244,.18) 50%,
-            rgba(70,144,212,.08) 100%
-        ),
-        #1A0B2E;
-        color: white;
+    gap: 25px;
 }
 
 .sobre-mim-card-cima,
-.sobre-mim-card-baixo{
+.sobre-mim-card-baixo {
     display: flex;
+    gap: 25px;
 }
 
-.sobre-mim-card-content{
+.sobre-mim-card-content {
+    flex: 1;
+
     display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(105, 59, 147, .35),
+            rgba(26, 11, 46, 1));
+
+    transition: .3s;
+}
+
+.sobre-mim-card-content:hover {
+    transform: translateY(-6px);
+
+    border-color: #8D51C4;
+
+    box-shadow: 0 15px 35px rgba(141, 81, 196, .25);
+}
+
+.card-image {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+
+    background: linear-gradient(180deg,
+            #693B93,
+            #4F228D);
+
+    border: 1px solid #A46DD5;
+
+    flex-shrink: 0;
+}
+
+.card-text h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.card-text p {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #C9C9D5;
 }
