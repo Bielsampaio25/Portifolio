@@ -34,7 +34,7 @@ main{
     min-height: 100vh;
 }
 
-footer{
+#footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
