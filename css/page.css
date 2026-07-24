@@ -125,7 +125,7 @@
     font-family: "Manrope", sans-serif;
 }
 
-.sobre-mim {
+#sobre-mim {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,15 +238,79 @@
     flex-shrink: 0;
 }
 
-.card-text h3 {
+.card-image-texto h4 {
     font-family: "Sora", sans-serif;
     font-size: 18px;
     margin-bottom: 6px;
 }
 
-.card-text p {
+.card-image-texto p {
     font-family: "Manrope", sans-serif;
     font-size: 15px;
     line-height: 1.6;
     color: #C9C9D5;
+}
+
+.tecnologias-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.tecnologias-container > h4{
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #8D51C4;
+}
+
+.tecnologias-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.tecnologias-card{
+    width: 130px;
+    height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    background: #11071F;
+
+    border: 1px solid rgba(164,109,213,.35);
+    border-radius: 16px;
+
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.tecnologias-card:hover{
+    transform: translateY(-8px);
+
+    border-color: #A46DD5;
+
+    box-shadow: 0 15px 35px rgba(164,109,213,.25);
+}
+
+.tecnologias-card img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.tecnologias-card h4{
+    color: white;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    margin: 0;
 }
